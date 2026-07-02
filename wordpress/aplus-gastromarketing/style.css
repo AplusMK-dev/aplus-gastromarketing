@@ -1,0 +1,17 @@
+/*
+Theme Name: Aplus Gastromarketing
+Theme URI: https://aplusmk.com
+Author: Aplus Gastromarketing
+Author URI: https://aplusmk.com
+Description: Tema corporativo de Aplus Gastromarketing. SPA en React integrada con WordPress.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: aplus-gastromarketing
+Tags: custom-menu, featured-images, translation-ready
+*/
+
+/* Los estilos de la aplicación se cargan desde los assets compilados de Vite. */

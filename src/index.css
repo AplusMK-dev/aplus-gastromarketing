@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Syne:wght@700;800&family=Roboto+Slab:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Roboto Slab", "Plus Jakarta Sans", "Inter", serif;
+  --font-display: "Bricolage Grotesque", "Syne", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-green: #B2D3C2;
+  --color-brand-cream: #FAF9F6;
+  --color-brand-dark: #1A1A1A;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+/* Custom scrollbars for a premium editorial design as a clean line */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05); /* Sleek thin track */
+}
+::-webkit-scrollbar-thumb {
+  background: #B2D3C2; /* Flat green line scroll thumb */
+  border-radius: 0px; /* Sharp line ends */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9abfa9;
+}
+
+/* Custom fine green scrollbar for ecosystem hover text */
+.custom-hover-scrollbar::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+.custom-hover-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.15); /* Sleek thin track on black */
+}
+.custom-hover-scrollbar::-webkit-scrollbar-thumb {
+  background: #B2D3C2; /* Flat green scroll thumb */
+  border-radius: 0px; /* Completely square/sharp ends */
+}
+.custom-hover-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #ccefe0;
+}
+.custom-hover-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #B2D3C2 rgba(255, 255, 255, 0.15);
+  padding-right: 8px; /* Extra spacing so the flat scrollbar doesn't overlap text */
+}
+
+/* Specific styling requested for the client card headings */
+#client-card-c1 h3,
+#client-card-c2 h3,
+#client-card-c3 h3 {
+  font-size: 46px;
+}
+
+/* Custom Curtain Button styles for the solid rising color curtain animation on hover */
+.btn-curtain {
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+  transition: color 0.5s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-curtain::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: -1;
+}
+
+.btn-curtain:hover::before {
+  transform: translateY(0);
+}
+
+.btn-curtain-black {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.btn-curtain-black::before {
+  background-color: #B2D3C2 !important;
+}
+
+.btn-curtain-black:hover {
+  color: #000000 !important;
+}
+
+.btn-curtain-green {
+  background-color: #B2D3C2 !important;
+  color: #000000 !important;
+}
+
+.btn-curtain-green::before {
+  background-color: #000000 !important;
+}
+
+.btn-curtain-green:hover {
+  color: #ffffff !important;
+}
+
+.btn-curtain-white {
+  background-color: #FAF9F6 !important;
+  color: #000000 !important;
+}
+
+.btn-curtain-white::before {
+  background-color: #000000 !important;
+}
+
+.btn-curtain-white:hover {
+  color: #FAF9F6 !important;
+}
+
