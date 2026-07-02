@@ -284,26 +284,6 @@ export default function Territorios({ onOpenContact, onOpenProject, onBack }: Te
                {/* SECTION 3: QUÉ PODEMOS AYUDARTE A CONSEGUIR */}
       <div className="w-full bg-[#B2D3C2] py-24 md:py-32 border-t border-b border-black/10 text-black relative">
         <div className="max-w-7xl mx-auto px-6">
-          
-          {/* Top Bar with Section Title and Aplus Branding */}
-          <div className="flex justify-between items-center border-b border-black/10 pb-6 mb-16">
-            <span className="font-mono text-xs tracking-[0.25em] text-black/80 font-bold uppercase">
-              [ TERRITORIOS Y PRODUCTOS ]
-            </span>
-            <div className="flex flex-col items-end shrink-0 select-none">
-              <div className="flex items-center gap-1">
-                <div className="w-6 h-6 rounded-full bg-black flex items-center justify-center text-[#B2D3C2] font-display font-bold text-xs">
-                  a
-                </div>
-                <span className="font-display font-black text-lg tracking-tighter text-black uppercase leading-none">
-                  plus
-                </span>
-              </div>
-              <span className="text-[6.5px] tracking-[0.2em] font-mono font-black text-black uppercase leading-none mt-0.5 mr-0.5">
-                GASTROMARKETING
-              </span>
-            </div>
-          </div>
 
           {/* 3-Column Layout from the Mock Image */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
@@ -311,7 +291,7 @@ export default function Territorios({ onOpenContact, onOpenProject, onBack }: Te
             {/* COLUMN 1: Cards 01, 04, 06 */}
             <div className="flex flex-col gap-6">
               {/* Card 01 */}
-              <div className="p-8 bg-transparent border border-black hover:bg-black/5 transition-all duration-300 flex flex-col justify-between group min-h-[190px]">
+              <div className="p-8 bg-transparent border border-black hover:bg-black/5 transition-all duration-300 flex flex-col justify-between group h-[260px]">
                 <div className="space-y-4 flex flex-col h-full justify-between text-left">
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
@@ -331,7 +311,7 @@ export default function Territorios({ onOpenContact, onOpenProject, onBack }: Te
               </div>
 
               {/* Card 04 */}
-              <div className="p-8 bg-transparent border border-black hover:bg-black/5 transition-all duration-300 flex flex-col justify-between group min-h-[190px]">
+              <div className="p-8 bg-transparent border border-black hover:bg-black/5 transition-all duration-300 flex flex-col justify-between group h-[260px]">
                 <div className="space-y-4 flex flex-col h-full justify-between text-left">
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
@@ -351,7 +331,7 @@ export default function Territorios({ onOpenContact, onOpenProject, onBack }: Te
               </div>
 
               {/* Card 06 */}
-              <div className="p-8 bg-transparent border border-black hover:bg-black/5 transition-all duration-300 flex flex-col justify-between group min-h-[190px]">
+              <div className="p-8 bg-transparent border border-black hover:bg-black/5 transition-all duration-300 flex flex-col justify-between group h-[260px]">
                 <div className="space-y-4 flex flex-col h-full justify-between text-left">
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
@@ -374,7 +354,7 @@ export default function Territorios({ onOpenContact, onOpenProject, onBack }: Te
             {/* COLUMN 2: Cards 02, 05, 07 */}
             <div className="flex flex-col gap-6">
               {/* Card 02 */}
-              <div className="p-8 bg-transparent border border-black hover:bg-black/5 transition-all duration-300 flex flex-col justify-between group min-h-[190px]">
+              <div className="p-8 bg-transparent border border-black hover:bg-black/5 transition-all duration-300 flex flex-col justify-between group h-[260px]">
                 <div className="space-y-4 flex flex-col h-full justify-between text-left">
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
@@ -394,7 +374,7 @@ export default function Territorios({ onOpenContact, onOpenProject, onBack }: Te
               </div>
 
               {/* Card 05 */}
-              <div className="p-8 bg-transparent border border-black hover:bg-black/5 transition-all duration-300 flex flex-col justify-between group min-h-[190px]">
+              <div className="p-8 bg-transparent border border-black hover:bg-black/5 transition-all duration-300 flex flex-col justify-between group h-[260px]">
                 <div className="space-y-4 flex flex-col h-full justify-between text-left">
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
@@ -414,7 +394,7 @@ export default function Territorios({ onOpenContact, onOpenProject, onBack }: Te
               </div>
 
               {/* Card 07 */}
-              <div className="p-8 bg-transparent border border-black hover:bg-black/5 transition-all duration-300 flex flex-col justify-between group min-h-[190px]">
+              <div className="p-8 bg-transparent border border-black hover:bg-black/5 transition-all duration-300 flex flex-col justify-between group h-[260px]">
                 <div className="space-y-4 flex flex-col h-full justify-between text-left">
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
@@ -437,7 +417,7 @@ export default function Territorios({ onOpenContact, onOpenProject, onBack }: Te
             {/* COLUMN 3: Card 03 & Highlight Text Block with Page Number */}
             <div className="flex flex-col gap-6 justify-between">
               {/* Card 03 */}
-              <div className="p-8 bg-transparent border border-black hover:bg-black/5 transition-all duration-300 flex flex-col justify-between group min-h-[190px]">
+              <div className="p-8 bg-transparent border border-black hover:bg-black/5 transition-all duration-300 flex flex-col justify-between group h-[260px]">
                 <div className="space-y-4 flex flex-col h-full justify-between text-left">
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
@@ -473,15 +453,8 @@ export default function Territorios({ onOpenContact, onOpenProject, onBack }: Te
                     <p className="font-sans text-xs sm:text-[13.5px] text-black/80 font-light leading-relaxed">
                       En Aplus diseñamos proyectos que convierten esos retos en acciones concretas, medibles y conectadas con la realidad gastronómica.
                     </p>
-                  </div>
                 </div>
-
-                {/* Page Number from Mock layout */}
-                <div className="flex justify-end items-end mt-8">
-                  <span className="font-display font-black text-3xl md:text-4xl text-black">
-                    27
-                  </span>
-                </div>
+              </div>
               </div>
             </div>
 
