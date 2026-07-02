@@ -6,7 +6,7 @@
 
 ```bash
 npm install
-npm run build
+npm run build:wordpress
 ```
 
 2. Copia esta carpeta completa (`aplus-gastromarketing`) a:
@@ -28,7 +28,7 @@ wp-content/themes/aplus-gastromarketing/
 Cada vez que modifiques el código React:
 
 ```bash
-npm run build
+npm run build:wordpress
 ```
 
 Luego sube la carpeta `dist/` actualizada al servidor (o vuelve a desplegar el tema completo).

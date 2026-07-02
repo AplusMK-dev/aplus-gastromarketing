@@ -32,14 +32,19 @@ En modo desarrollo los formularios simulan el envío. En WordPress se conectan a
 ## Build para WordPress
 
 ```bash
-npm run build
+npm run build:wordpress
 ```
 
 Esto compila los assets en `wordpress/aplus-gastromarketing/dist/`.
 
+## Despliegue en Vercel
+
+El comando `npm run build` genera la SPA en `dist/` (configurado en `vercel.json`).
+Vercel detecta el proyecto como Vite y sirve la aplicación como sitio estático.
+
 ## Instalación en WordPress
 
-1. Ejecuta `npm run build` en este repositorio.
+1. Ejecuta `npm run build:wordpress` en este repositorio.
 2. Copia la carpeta `wordpress/aplus-gastromarketing/` a `wp-content/themes/` de tu instalación WordPress.
 3. En **Apariencia → Temas**, activa **Aplus Gastromarketing**.
 4. Configura una página estática como portada si lo necesitas (el tema renderiza la SPA en todas las vistas).
@@ -56,7 +61,7 @@ wp-content/themes/aplus-gastromarketing/
 ├── front-page.php
 ├── page.php
 ├── inc/
-└── dist/          ← generado por npm run build
+└── dist/          ← generado por npm run build:wordpress
 ```
 
 ## Navegación
@@ -85,8 +90,8 @@ Los formularios envían al email del administrador de WordPress. Para integrar c
 ## Build standalone (sin WordPress)
 
 ```bash
-npm run build:spa
+npm run build
 npm run preview
 ```
 
-Genera una SPA independiente en `dist/` para previsualización sin WordPress.
+Genera una SPA independiente en `dist/` para previsualización o despliegue en Vercel.

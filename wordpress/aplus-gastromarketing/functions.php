@@ -56,7 +56,7 @@ function aplus_missing_build_notice(): void
 
     echo '<div class="notice notice-warning"><p>';
     echo esc_html__(
-        'Aplus Gastromarketing: ejecuta "npm run build" en el proyecto para generar los assets del tema.',
+        'Aplus Gastromarketing: ejecuta "npm run build:wordpress" en el proyecto para generar los assets del tema.',
         'aplus-gastromarketing'
     );
     echo '</p></div>';
