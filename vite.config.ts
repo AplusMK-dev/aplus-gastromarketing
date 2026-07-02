@@ -26,6 +26,29 @@ function manualChunks(id: string): string | undefined {
 export default defineConfig(({mode}) => {
   const isWordPress = mode === 'wordpress';
 
+  if (isWordPress) {
+    return {
+      plugins: [react(), tailwindcss()],
+      resolve: {
+        alias: {
+          '@': path.resolve(__dirname, '.'),
+        },
+      },
+      build: {
+        outDir: 'wordpress/aplus-gastromarketing/dist',
+        emptyOutDir: true,
+        manifest: true,
+        chunkSizeWarningLimit: 600,
+        rollupOptions: {
+          input: path.resolve(__dirname, 'src/main.tsx'),
+          output: {
+            manualChunks,
+          },
+        },
+      },
+    };
+  }
+
   return {
     plugins: [react(), tailwindcss()],
     resolve: {
@@ -34,25 +57,14 @@ export default defineConfig(({mode}) => {
       },
     },
     build: {
+      outDir: 'dist',
+      emptyOutDir: true,
       chunkSizeWarningLimit: 600,
       rollupOptions: {
-        input: isWordPress
-          ? path.resolve(__dirname, 'src/main.tsx')
-          : undefined,
         output: {
           manualChunks,
         },
       },
-      ...(isWordPress
-        ? {
-            outDir: 'wordpress/aplus-gastromarketing/dist',
-            emptyOutDir: true,
-            manifest: true,
-          }
-        : {
-            outDir: 'dist',
-            emptyOutDir: true,
-          }),
     },
   };
 });
